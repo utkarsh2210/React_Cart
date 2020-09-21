@@ -16,7 +16,19 @@ class CartItem extends React.Component {
 
     // Arrow functions automatically bind the instance of "this" to the class
     increaseQuantity = () => {
-        console.log('this', this.state);
+        // console.log('this', this.state);
+        
+        // setState form 1
+        // this.setState({
+        //     qty: this.state.qty + 1
+        // });
+
+        // setState form 2 - if prevState is required, use this
+        this.setState((prevState) => {
+            return {
+                qty: prevState.qty + 1
+            }
+        });
     }
     
     render() {
