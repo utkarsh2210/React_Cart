@@ -9,6 +9,14 @@ class CartItem extends React.Component {
             qty: 1,
             img: ''
         }
+
+        /*Another method to pass the values to the function */
+        // this.increaseQuantity = this.increaseQuantity.bind(this);
+    }
+
+    // Arrow functions automatically bind the instance of "this" to the class
+    increaseQuantity = () => {
+        console.log('this', this.state);
     }
     
     render() {
@@ -25,9 +33,24 @@ class CartItem extends React.Component {
                     <div style={ { color: "grey" } }>Qty: {qty}</div>
                     <div className="cart-item-actions">
                         {/*Buttons*/}
-                        <img alt="increase" className="action-icons" src="https://www.flaticon.com/svg/static/icons/svg/992/992651.svg" />
-                        <img alt="decrease" className="action-icons" src="https://www.flaticon.com/svg/static/icons/svg/659/659892.svg" />
-                        <img alt="delete" className="action-icons" src="https://www.flaticon.com/svg/static/icons/svg/1214/1214428.svg" />
+                        <img 
+                            alt="increase" 
+                            className="action-icons" 
+                            src="https://www.flaticon.com/svg/static/icons/svg/992/992651.svg"
+                            //  Method to pass the value to the function 
+                            //  onClick={this.increaseQuantity.bind(this)}
+                            onClick={this.increaseQuantity}  
+                        />
+                        <img 
+                            alt="decrease" 
+                            className="action-icons" 
+                            src="https://www.flaticon.com/svg/static/icons/svg/659/659892.svg" 
+                        />
+                        <img 
+                            alt="delete" 
+                            className="action-icons" 
+                            src="https://www.flaticon.com/svg/static/icons/svg/1214/1214428.svg" 
+                        />
                     </div>
                 </div>
             </div>
