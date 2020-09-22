@@ -34,14 +34,14 @@ const styles = {
     navLogo: {
         width: 'max-content',
         fontSize: '1.7rem',
-        color: 'yellow',
+        color: 'red',
         fontWeight: 600
     },
     cartIconContainer: {
         position: 'relative'
     },
     cartCount: {
-        background: 'yellow',
+        background: 'gold',
         borderRadius: '50%',
         padding: '0px 6px',
         position: 'absolute',

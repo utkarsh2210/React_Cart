@@ -203,10 +203,22 @@ class App extends React.Component {
           onDeleteProduct={this.handleDeleteProduct}
         />
         {loading && <h1>Loading Products....</h1>}
-        <div style={ { padding: 10, fontSize: 20}}>TOTAL: {this.getCartTotal()} </div>
+        <div style={ styles.totalPrice }>Total: Rs. {this.getCartTotal()} </div>
       </div>
     );
   }
 }
 
+const styles = {
+  totalPrice: {
+    padding: 10, 
+    fontSize: 20,
+    fontWeight: 600, 
+    position: 'absolute', 
+    background: '#eb9f34', 
+    textAlign:'center', 
+    bottom: 0,
+    width: '98.5%' 
+  }
+}
 export default App;

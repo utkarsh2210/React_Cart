@@ -23,8 +23,8 @@ body {
 }
 
 .action-icons{
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   margin-right: 10px
 }
 
@@ -32,7 +32,13 @@ body {
   cursor: pointer;
 }
 
+.App .cart {
+  margin: auto;
+}
 .cart{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 10px;
 }
