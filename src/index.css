@@ -9,7 +9,9 @@ body {
 
 .cart-item{
   display: inline-flex;
-  margin: 20px 10px;
+  margin: 20px 1px;
+  border: 1px solid rgb(187, 181, 181);
+  align-items: center;
 }
 
 .cart-item .right-block{
@@ -32,5 +34,5 @@ body {
 
 .cart{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }

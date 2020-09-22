@@ -51,6 +51,7 @@ const styles = {
     image: {
         height: 110,
         width: 110,
+        marginLeft: 5,
         borderRadius: 4,
         background: '#ccc'
     }
