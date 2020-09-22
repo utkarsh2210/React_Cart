@@ -4,7 +4,8 @@ class CartItem extends React.Component {
     
     render() {
         // Object Restructuring
-        const {price, title, qty} = this.props.product;
+        const { price, title, qty } = this.props.product;
+        const { product, onIncreaseQuantity, onDecreaseQuantity } = this.props;
         return (
             <div className="cart-item">
                 <div className="left-block">
@@ -22,13 +23,14 @@ class CartItem extends React.Component {
                             src="https://www.flaticon.com/svg/static/icons/svg/992/992651.svg"
                             //  Method to pass the value to the function 
                             //  onClick={this.increaseQuantity.bind(this)}
-                            onClick={() => this.props.onIncreaseQuantity(this.props.product)}  
+                            //  onClick={() => this.props.onIncreaseQuantity(this.props.product)}
+                            onClick={() => onIncreaseQuantity(product)}    
                         />
                         <img 
                             alt="decrease" 
                             className="action-icons" 
                             src="https://www.flaticon.com/svg/static/icons/svg/659/659892.svg" 
-                            onClick = {this.decreaseQuantity}
+                            onClick = {() => onDecreaseQuantity(product)}
                         />
                         <img 
                             alt="delete" 
