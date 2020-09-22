@@ -1,19 +1,7 @@
 import React from 'react';
 
 class CartItem extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            price: 999,
-            title: 'Phone',
-            qty: 1,
-            img: ''
-        }
-
-        /*Another method to pass the values to the function */
-        // this.increaseQuantity = this.increaseQuantity.bind(this);
-    }
-
+    
     // Arrow functions automatically bind the instance of "this" to the class
     increaseQuantity = () => {
         // console.log('this', this.state);
@@ -46,7 +34,7 @@ class CartItem extends React.Component {
     
     render() {
         // Object Restructuring
-        const {price, title, qty} = this.state;
+        const {price, title, qty} = this.props.product;
         return (
             <div className="cart-item">
                 <div className="left-block">
