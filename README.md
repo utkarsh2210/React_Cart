@@ -1,4 +1,25 @@
+# React Cart - A Cart app using React
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Tools Used
+
+<img src="https://www.gstatic.com/devrel-devsite/prod/vc0d10ef7c6e8aac6c71e2a2051f66f30f3c99a4b52237746839ce4f1fae2b7b4/firebase/images/touchicon-180.png" height="100px" width="100px" alt="Firebase"><img src="public/logo192.png" height="100px" alt="React"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" height="100px" alt="Node">
+1. Firebase (FireStore as Database)
+2. React (For Front End)
+3. Node Js (For setting up the Local Server)
+
+## Screenshot
+
+![SC!](https://github.com/utkarsh2210/React_Cart/blob/master/public/react_cart.PNG)
+
+## Features
+
+1. Increasing a product's quantity
+2. Decreasing a product's quantity
+3. Display of total price (Bottom of the screen)
+4. Display of the number of items in the cart (on top right corner of the screen)
+5. Real time data synchronization with database i.e. data gets updated upon Increasing/Decreasing/Removing a product from the cart in real time. (Cloud based Database)
 
 ## Available Scripts
 
